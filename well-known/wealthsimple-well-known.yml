@@ -1,0 +1,12 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.wealthsimple.com/.well-known/
+host: https://www.wealthsimple.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: wealthsimple-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404

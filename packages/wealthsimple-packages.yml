@@ -1,0 +1,68 @@
+generated: '2026-07-23'
+method: searched
+source: https://www.npmjs.com/search?q=wealthsimple
+note: >-
+  Wealthsimple publishes no official public developer API and ships no official,
+  functional client SDK. The only first-party package is a namespace-reservation
+  placeholder gem under the verified wealthsimple GitHub organization. All other
+  libraries below are community-built, unofficial wrappers around Wealthsimple's
+  auth-gated consumer-app GraphQL / Trade REST endpoints. None is marked
+  official:true because none is a supported first-party client library.
+packages:
+- language: ruby
+  registry: rubygems
+  name: wealthsimple
+  url: https://rubygems.org/gems/wealthsimple
+  source_code: https://github.com/wealthsimple/wealthsimple-gem
+  official: false
+  first_party_namespace: true
+  status: placeholder
+  note: >-
+    Published under the official wealthsimple org but described as a placeholder /
+    namespace reservation, not a functional SDK (~2,879 downloads).
+- language: javascript
+  registry: npm
+  name: wstrade-api
+  url: https://www.npmjs.com/package/wstrade-api
+  install: npm install wstrade-api
+  source_code: https://github.com/ahmedsakr/wstrade-api
+  version: 1.10.2
+  official: false
+  note: Unofficial community wrapper for the Wealthsimple Trade API.
+- language: javascript
+  registry: npm
+  name: wealthsimple-api
+  url: https://www.npmjs.com/package/wealthsimple-api
+  install: npm install wealthsimple-api
+  source_code: https://github.com/bufutda/wealthsimple-api
+  version: 1.0.1
+  official: false
+  note: Unofficial community wrapper for the Wealthsimple API.
+- language: javascript
+  registry: npm
+  name: "@hawkeeman/wsli"
+  url: https://www.npmjs.com/package/@hawkeeman/wsli
+  install: npm install -g @hawkeeman/wsli
+  source_code: https://github.com/Hawkeeeman/wsli
+  version: 0.2.7
+  official: false
+  kind: cli
+  note: >-
+    Unofficial community CLI wrapping Wealthsimple's GraphQL + Trade REST surface
+    (accounts, portfolio, buy/sell).
+contract_discovery:
+  probed: '2026-07-23'
+  openapi: none
+  openapi_hosts_probed:
+  - {host: api.production.wealthsimple.com, result: 403 auth-gated, spec: none}
+  - {host: trade-service.wealthsimple.com, result: 403 auth-gated, spec: none}
+  - {host: developers.wealthsimple.com, result: no-dns}
+  graphql:
+    endpoint: https://my.wealthsimple.com/graphql
+    status: 401
+    introspection: gated
+    note: >-
+      A GraphQL surface exists for the consumer app but requires authentication;
+      introspection is not available anonymously, so no SDL could be captured.
+      This is an internal consumer-app API, not a published developer API.
+  mcp: none

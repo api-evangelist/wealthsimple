@@ -1,0 +1,27 @@
+# Wealthsimple
+
+> Wealthsimple is a Toronto-based Canadian financial technology company (founded 2014) offering a full suite of consumer financial products — managed investing (Invest), self-directed trading (Trade/stocks & ETFs), cryptocurrency, tax filing (Tax), spending, saving, and cash/card products. It serves more than 4 million Canadians with roughly CAD $125B in assets under administration. Wealthsimple does NOT publish an official public developer API or OpenAPI; programmatic access is via open-banking aggregators (Plaid, SnapTrade) and community-built unofficial libraries, not a first-party API product.
+
+## Company
+- Website: https://www.wealthsimple.com/
+- Newsroom / Blog: https://newsroom.wealthsimple.com/
+- Magazine: https://www.wealthsimple.com/en-ca/magazine
+- Careers: https://www.wealthsimple.com/en-ca/careers
+- Help Centre: https://help.wealthsimple.com/
+- Pricing: https://www.wealthsimple.com/en-ca/pricing
+- Login / App: https://my.wealthsimple.com/app/login
+
+## Trust & Security
+- Security policy (security.txt): https://www.wealthsimple.com/.well-known/security.txt
+- Vulnerability disclosure / bug bounty (HackerOne): https://hackerone.com/wealthsimple
+- Trust Center (SOC 2, PCI DSS): https://trust.wealthsimple.com/
+- Status page: https://status.wealthsimple.com/
+- Privacy: https://www.wealthsimple.com/en-ca/legal/privacy
+- Terms: https://www.wealthsimple.com/en-ca/legal/terms
+
+## Code
+- GitHub organization (verified, open-source utilities — no first-party API SDK): https://github.com/wealthsimple
+
+## Notes
+- No official public developer API / OpenAPI specification is published as of 2026-07-21.
+- Account connectivity is offered through third-party aggregators (SnapTrade, Plaid) rather than a Wealthsimple-hosted API product.
