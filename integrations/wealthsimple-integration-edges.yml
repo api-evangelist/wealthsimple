@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/wealthsimple/integrations
 - https://n8n.io/integrations/wealthsimple/
@@ -9,8 +9,33 @@ checked:
 - https://composio.dev/toolkits/wealthsimple
 - https://monid.ai/tools/wealthsimple
 - https://n8n.io/integrations/wealthsimple/
+- https://registry.financialdataexchange.org/
 - https://zapier.com/apps/wealthsimple/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: FDX (Financial Data Exchange)
+  partner: fdx
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registry.financialdataexchange.org/
+  contract_reference:
+    register: FDX Registry
+    standard: FDX API
+    spec_file: null
+    register_api: https://registry.financialdataexchange.org/fdxregistryapi/organizations/search/listingTags
+    role: data-provider,data-recipient
+    member_type: MEMBER
+    registered_name: Wealth Simple
+    register_id: 375
+    registered_website: https://www.wealthsimple.com/en-ca
+    country: Canada
+    fdx_version: null
+    matched_by: domain:wealthsimple.com
+    detected_by: sweep-fdx.py
+    detected: '2026-10-14'
+  detected_by: sweep-fdx.py
+  first_seen: '2026-10-14'
 templates: []
