@@ -6,10 +6,17 @@ source:
 - https://composio.dev/toolkits/wealthsimple
 - https://monid.ai/tools/wealthsimple
 checked:
+- https://api.nuget.org/v3
 - https://composio.dev/toolkits/wealthsimple
+- https://crates.io/api/v1
 - https://monid.ai/tools/wealthsimple
 - https://n8n.io/integrations/wealthsimple/
+- https://proxy.golang.org
+- https://pypi.org/pypi
 - https://registry.financialdataexchange.org/
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://zapier.com/apps/wealthsimple/integrations
 summary: null
 marketplace_apps: []
@@ -38,4 +45,34 @@ edges:
     detected: '2026-10-14'
   detected_by: sweep-fdx.py
   first_seen: '2026-10-14'
+- partner_name: RubyGems
+  partner: rubygems
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Ruby)
+  evidence: https://rubygems.org/gems/wealthsimple
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: RubyGems (public registry JSON)
+    spec_file: null
+    language: Ruby
+    packages:
+    - name: wealthsimple
+      version: 0.1.0
+      released: '2017-09-23'
+      released_field: version_created_at
+      lapsed: true
+      page: https://rubygems.org/gems/wealthsimple
+      repo_leg: github-org:wealthsimple
+      publisher_leg: org:wealthsimple
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 templates: []
